@@ -185,7 +185,7 @@ function page1Anime() {
 
 setTimeout(() => {
     page1Anime();
-}, 2100);
+}, 2400);
 
 function btnEffect () {
     const link = document.querySelector ('footer #part3 a');
