@@ -285,11 +285,11 @@ function time () {
     const minutes = date.getMinutes();
     const currentTime = `${hours}:${minutes}`;
 
-    if (hours >= 0 && hours < 13) {
+    if (hours >= 0 && hours < 12) {
         time.innerHTML = `${currentTime} a.m IST`;
     }else {
         time.innerHTML = `${currentTime} p.m IST`;
     }
 }
 
-time()
+setInterval (() => time(), 100);
