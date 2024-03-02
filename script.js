@@ -283,7 +283,8 @@ function time () {
     const date = new Date();
     const hours = date.getHours();
     const minutes = date.getMinutes();
-    const currentTime = `${hours}:${minutes}`;
+    const seconds = date.getSeconds();
+    const currentTime = `${hours}:${minutes}:${seconds}`;
 
     if (hours >= 0 && hours < 12) {
         time.innerHTML = `${currentTime} a.m IST`;
@@ -292,4 +293,4 @@ function time () {
     }
 }
 
-setInterval (() => time(), 100);
+setInterval (() => time(), 1000);
